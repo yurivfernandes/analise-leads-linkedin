@@ -1,7 +1,5 @@
 # 📊 Análise de Leads do LinkedIn
 
-![LinkedIn Leads](https://example.com/linkedin-leads-banner.png)
-
 Este projeto realiza uma clusterização de leads do LinkedIn, utilizando dados fictícios para simular leads e organizá-los em clusters com base em várias dimensões, como cargo, setor, localização e tamanho da empresa.
 
 ## 🛠️ Pré-requisitos
@@ -67,6 +65,7 @@ Certifique-se de executar o comando principal para garantir que todos os dados s
 
 **Nota**: Mantenha o ambiente virtual ativado durante todo o processo para garantir que as dependências corretas sejam utilizadas.
 
-![Python](https://img.shields.io/badge/Python-3.x-blue)
-![Django](https://img.shields.io-badge/Django-3.x-green)
-![Faker](https://img.shields.io-badge/Faker-9.x-yellow)
+[![Python](https://img.shields.io/badge/Python-3.x-blue)](https://docs.python.org/3/)
+[![Django](https://img.shields.io/badge/Django-3.2-green)](https://docs.djangoproject.com/en/3.2/)
+[![Faker](https://img.shields.io/badge/Faker-9.8.1-yellow)](https://faker.readthedocs.io/en/master/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Yuri-blue)](https://www.linkedin.com/in/yurianalistabi/)
