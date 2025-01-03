@@ -1,6 +1,8 @@
 # 📊 Análise de Leads do LinkedIn
 
-    Este projeto realiza uma clusterização de leads do LinkedIn, utilizando dados fictícios para simular leads e organizá-los em clusters com base em várias dimensões, como cargo, setor, localização e tamanho da empresa.
+    Este projeto realiza uma clusterização de leads do LinkedIn, 
+    utilizando dados fictícios para simular leads e organizá-los em clusters com base em várias dimensões, 
+    como cargo, setor, localização e tamanho da empresa.
 
     ## 🛠️ Pré-requisitos
 
