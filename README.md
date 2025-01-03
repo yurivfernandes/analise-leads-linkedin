@@ -1,71 +1,94 @@
-# 📊 Análise de Leads do LinkedIn
+<div align="center">
 
-Este projeto realiza uma clusterização de leads do LinkedIn, utilizando dados fictícios para simular leads e organizá-los em clusters com base em várias dimensões, como cargo, setor, localização e tamanho da empresa.
+  # 📊 Análise de Leads do LinkedIn
+
+  [![Python](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python)](https://docs.python.org/3/)
+  [![Django](https://img.shields.io/badge/Django-3.2-green?style=for-the-badge&logo=django)](https://docs.djangoproject.com/en/3.2/)
+  [![Faker](https://img.shields.io/badge/Faker-9.8.1-yellow?style=for-the-badge)](https://faker.readthedocs.io/en/master/)
+  [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/yurianalistabi/)
+</div>
+
+## 📑 Índice
+- [Sobre o Projeto](#-sobre-o-projeto)
+- [Pré-requisitos](#️-pré-requisitos)
+- [Instalação](#-instalação)
+- [Como Usar](#-como-usar)
+- [Contribuição](#-contribuição)
+
+## 🎯 Sobre o Projeto
+Uma poderosa ferramenta de análise que realiza clusterização de leads do LinkedIn, utilizando dados para categorizar contatos em grupos estratégicos baseados em:
+
+- 👔 Cargo
+- 🏢 Setor
+- 📍 Localização
+- 📊 Tamanho da empresa
 
 ## 🛠️ Pré-requisitos
 
-- Certifique-se de que o **Python 3** esteja instalado em sua máquina. Verifique a instalação com:
-  ```bash
-  python3 --version
-  ```
+<img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png" alt="Python" width="40" align="left" />
+
+**Python 3** é necessário para executar o projeto. Verifique sua instalação:
+```bash
+python3 --version
+```
 
 ## 🚀 Instalação
 
-1. **Crie um ambiente virtual** para isolar as dependências do projeto:
-   ```bash
-   python3 -m venv venv
-   ```
-
-2. **Ative o ambiente virtual**:
-   - No macOS/Linux:
-     ```bash
-     source venv/bin/activate
-     ```
-   - No Windows:
-     ```bash
-     .\venv\Scripts\activate
-     ```
-
-3. **Instale as dependências** listadas no arquivo `requirements.txt`:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. **Gere as migrações** para preparar o banco de dados:
-   ```bash
-   python3 src/manage.py makemigrations
-   ```
-
-5. **Realize as migrações** para aplicar as alterações no banco de dados:
-   ```bash
-   python3 src/manage.py migrate
-   ```
-
-## ⚙️ Execução
-
-Para executar o processo completo de geração de leads, popular dimensões e preencher clusters, utilize o comando principal:
-
+### 1. Prepare o Ambiente Virtual
 ```bash
-python3 src/manage.py run_all_commands [quantidade_de_registros]
+# Criar ambiente virtual
+python3 -m venv venv
+
+# Ativar ambiente (Mac/Linux)
+source venv/bin/activate
+
+# Ativar ambiente (Windows)
+.\venv\Scripts\activate
 ```
 
-- **Com quantidade de registros**: Se você fornecer a quantidade de registros, o comando irá gerar o número especificado de leads.
-  ```bash
-  python3 src/manage.py run_all_commands 500
-  ```
+### 2. Configure o Projeto
+```bash
+# Instalar dependências
+pip install -r requirements.txt
 
-- **Sem quantidade de registros**: Se você não fornecer a quantidade, o comando irá gerar **1.000 leads** por padrão.
-  ```bash
-  python3 src/manage.py run_all_commands
-  ```
+# Preparar banco de dados
+python3 src/manage.py makemigrations
+python3 src/manage.py migrate
+```
 
-Certifique-se de executar o comando principal para garantir que todos os dados sejam processados adequadamente.
+## 💻 Como Usar
+
+Execute o comando principal para iniciar a análise:
+
+```bash
+# Gerar 1000 leads (padrão)
+python3 src/manage.py run_all_commands
+
+# Ou especifique a quantidade
+python3 src/manage.py run_all_commands 500
+```
+
+## 📈 Resultados
+
+A ferramenta irá gerar:
+- 📊 Clusters de leads organizados
+- 📑 Relatórios detalhados
+- 🎯 Insights estratégicos
+
+## 🤝 Contribuição
+
+Contribuições são sempre bem-vindas! Veja como você pode ajudar:
+
+1. Faça um Fork do projeto
+2. Crie uma Branch para sua Feature (`git checkout -b feature/AmazingFeature`)
+3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
+4. Push para a Branch (`git push origin feature/AmazingFeature`)
+5. Abra um Pull Request
 
 ---
 
-**Nota**: Mantenha o ambiente virtual ativado durante todo o processo para garantir que as dependências corretas sejam utilizadas.
-
-[![Python](https://img.shields.io/badge/Python-3.x-blue)](https://docs.python.org/3/)
-[![Django](https://img.shields.io/badge/Django-3.2-green)](https://docs.djangoproject.com/en/3.2/)
-[![Faker](https://img.shields.io/badge/Faker-9.8.1-yellow)](https://faker.readthedocs.io/en/master/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Yuri-blue)](https://www.linkedin.com/in/yurianalistabi/)
+<div align="center">
+  <p>Desenvolvido por <a href="https://www.linkedin.com/in/yurianalistabi/">Yuri Fernandes</a></p>
+  
+  [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/yurianalistabi/)
+</div>
