@@ -48,19 +48,6 @@ class Command(BaseCommand):
                 },
             )
 
-            if created:
-                self.stdout.write(
-                    self.style.SUCCESS(
-                        f"Registro criado para o lead: {lead.nome}"
-                    )
-                )
-            else:
-                self.stdout.write(
-                    self.style.SUCCESS(
-                        f"Registro atualizado para o lead: {lead.nome}"
-                    )
-                )
-
         self.stdout.write(
             self.style.SUCCESS(
                 "Processo de preenchimento da tabela Cluster concluído!"
