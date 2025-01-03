@@ -1,0 +1,11 @@
+.vscode/
+.python-version
+**/.venv
+**/.git
+**/__pycache__
+**/.ipynb_checkpoints
+.idea/
+.run/
+.env
+**/db.sqlite3
+.pytlintrc
