@@ -1,68 +1,72 @@
 # 📊 Análise de Leads do LinkedIn
 
-    Este projeto realiza uma clusterização de leads do LinkedIn, 
-    utilizando dados fictícios para simular leads e organizá-los em clusters com base em várias dimensões, 
-    como cargo, setor, localização e tamanho da empresa.
+![LinkedIn Leads](https://example.com/linkedin-leads-banner.png)
 
-    ## 🛠️ Pré-requisitos
+Este projeto realiza uma clusterização de leads do LinkedIn, utilizando dados fictícios para simular leads e organizá-los em clusters com base em várias dimensões, como cargo, setor, localização e tamanho da empresa.
 
-    - Certifique-se de que o **Python 3** esteja instalado em sua máquina. Verifique a instalação com:
-      ```bash
-      python3 --version
-      ```
+## 🛠️ Pré-requisitos
 
-    ## 🚀 Instalação
+- Certifique-se de que o **Python 3** esteja instalado em sua máquina. Verifique a instalação com:
+  ```bash
+  python3 --version
+  ```
 
-    1. **Crie um ambiente virtual** para isolar as dependências do projeto:
-       ```bash
-       python3 -m venv venv
-       ```
+## 🚀 Instalação
 
-    2. **Ative o ambiente virtual**:
-       - No macOS/Linux:
-         ```bash
-         source venv/bin/activate
-         ```
-       - No Windows:
-         ```bash
-         .\venv\Scripts\activate
-         ```
+1. **Crie um ambiente virtual** para isolar as dependências do projeto:
+   ```bash
+   python3 -m venv venv
+   ```
 
-    3. **Instale as dependências** listadas no arquivo `requirements.txt`:
-       ```bash
-       pip install -r requirements.txt
-       ```
+2. **Ative o ambiente virtual**:
+   - No macOS/Linux:
+     ```bash
+     source venv/bin/activate
+     ```
+   - No Windows:
+     ```bash
+     .\venv\Scripts\activate
+     ```
 
-    4. **Gere as migrações** para preparar o banco de dados:
-       ```bash
-       python3 src/manage.py makemigrations
-       ```
+3. **Instale as dependências** listadas no arquivo `requirements.txt`:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-    5. **Realize as migrações** para aplicar as alterações no banco de dados:
-       ```bash
-       python3 src/manage.py migrate
-       ```
+4. **Gere as migrações** para preparar o banco de dados:
+   ```bash
+   python3 src/manage.py makemigrations
+   ```
 
-    ## ⚙️ Execução
+5. **Realize as migrações** para aplicar as alterações no banco de dados:
+   ```bash
+   python3 src/manage.py migrate
+   ```
 
-    Para executar o processo completo de geração de leads, popular dimensões e preencher clusters, utilize o comando principal:
+## ⚙️ Execução
 
-    ```bash
-    python3 src/manage.py run_all_commands [quantidade_de_registros]
-    ```
+Para executar o processo completo de geração de leads, popular dimensões e preencher clusters, utilize o comando principal:
 
-    - **Com quantidade de registros**: Se você fornecer a quantidade de registros, o comando irá gerar o número especificado de leads.
-      ```bash
-      python3 src/manage.py run_all_commands 500
-      ```
+```bash
+python3 src/manage.py run_all_commands [quantidade_de_registros]
+```
 
-    - **Sem quantidade de registros**: Se você não fornecer a quantidade, o comando irá gerar **1.000 leads** por padrão.
-      ```bash
-      python3 src/manage.py run_all_commands
-      ```
+- **Com quantidade de registros**: Se você fornecer a quantidade de registros, o comando irá gerar o número especificado de leads.
+  ```bash
+  python3 src/manage.py run_all_commands 500
+  ```
 
-    Certifique-se de executar o comando principal para garantir que todos os dados sejam processados adequadamente.
+- **Sem quantidade de registros**: Se você não fornecer a quantidade, o comando irá gerar **1.000 leads** por padrão.
+  ```bash
+  python3 src/manage.py run_all_commands
+  ```
 
-    ---
+Certifique-se de executar o comando principal para garantir que todos os dados sejam processados adequadamente.
 
-    **Nota**: Mantenha o ambiente virtual ativado durante todo o processo para garantir que as dependências corretas sejam utilizadas.
+---
+
+**Nota**: Mantenha o ambiente virtual ativado durante todo o processo para garantir que as dependências corretas sejam utilizadas.
+
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Django](https://img.shields.io-badge/Django-3.x-green)
+![Faker](https://img.shields.io-badge/Faker-9.x-yellow)
